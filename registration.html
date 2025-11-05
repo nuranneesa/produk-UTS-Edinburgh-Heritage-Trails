@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Registration — Edinburgh Heritage Trails</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header simple">
+    <div class="inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="EHT logo" class="logo">
+        <div class="brand-text"><h1>Edinburgh Heritage Trails</h1></div>
+      </div>
+      <nav class="main-nav">
+        <ul id="navList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="registration.html" class="active">Registration</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Join a Trail</h3>
+        <p>Temukan pesona jalan-jalan tua Edinburgh dan cerita di baliknya.</p><br>
+        <p>Daftarkan diri Anda untuk mengikuti tur warisan budaya berpemandu, cocok bagi pecinta sejarah, fotografer, atau siapa pun yang ingin mengenal kota ini lebih dekat.</p>
+      <ul>
+        <li>📍 Menelusuri situs bersejarah utama</li>
+        <li>🕰️ Mendengarkan kisah dari pemandu lokal</li>
+        <li>📸 Menikmati panorama dan spot menarik</li>
+      </ul>
+      <p><strong>Isi formulir di samping ini untuk mendaftar.</strong></p>
+      </div>
+    </aside>
+
+    <main class="content container">
+      <h2>Registration</h2>
+      <form id="regForm" class="simple-form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="yourname@gmail.com" required>
+
+        <label for="origin">Country of Origin</label>
+        <select id="origin" name="origin" required>
+          <option value="">-- Select your country --</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="united-kingdom">United Kingdom</option>
+          <option value="scotland">Scotland</option>
+          <option value="france">France</option>
+          <option value="japan">Japan</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="united-states">United States</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input id="date" name="date" type="date">
+
+        <button type="submit" class="btn">Submit</button>
+        <p id="regNote" class="note" aria-live="polite"></p>
+      </form>
+    </main>
+  </div>
+
+  <div class="wrapper">
+    <footer class="site-footer">
+      <div>© 2025 Edinburgh Heritage Trails — Designed by Issa</div>
+      <div class="small">for Mid-Test Project</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

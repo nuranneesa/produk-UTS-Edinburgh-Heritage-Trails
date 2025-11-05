@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Edinburgh Heritage Trails</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header simple">
+    <div class="inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="EHT logo" class="logo">
+        <div class="brand-text"><h1>Edinburgh Heritage Trails</h1></div>
+      </div>
+      <nav class="main-nav">
+        <ul id="navList">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="widget">
+        <h3>Contact Info</h3>
+        <p>Jejak sejarah Edinburgh tidak hanya hidup di jalan-jalan kunonya, tapi juga dalam percakapan yang kita bangun. Kirim pertanyaan atau ceritakan pengalamanmu menjelajahi kota ini kepada kami melalui:</p>
+        <ul>
+          <li>📩 <strong>Email:</strong> issaboutoshine@gmail.com</li>
+          <li>📞 <strong>Telp:</strong> +62 858 101 523</li>
+          <li>📍 <strong>Alamat:</strong> Heritage Trails Office, Old Town, Edinburgh</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="content container">
+      <h2>Contact</h2>
+      <form id="contactForm" class="simple-form" novalidate>
+        <label for="cname">Name</label>
+        <input id="cname" name="cname" type="text" required>
+
+        <label for="cemail">Email</label>
+        <input id="cemail" name="cemail" type="email" required>
+
+        <label for="cmessage">Message</label>
+        <textarea id="cmessage" name="cmessage" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+        <p id="contactNote" class="note" aria-live="polite"></p>
+      </form>
+    </main>
+  </div>
+
+  <div class="wrapper">
+    <footer class="site-footer">
+      <div>© 2025 Edinburgh Heritage Trails — Designed by Issa</div>
+      <div class="small">for Mid-Test Project</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
